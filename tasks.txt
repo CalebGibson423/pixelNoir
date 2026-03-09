@@ -1,0 +1,9 @@
+
+March 9
+- basic movement 
+- basic camera controls
+- main menu
+
+Current todo
+- create/find better character model
+- create/find better enviornment assets
