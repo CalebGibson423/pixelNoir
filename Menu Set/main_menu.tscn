@@ -4,11 +4,18 @@
 [ext_resource type="Script" uid="uid://badakjqb2pbjr" path="res://Menu Set/button_2.gd" id="2_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://by3ccvhsjcuf5" path="res://assets/tilesets/other/grass.png" id="2_mfqc8"]
 [ext_resource type="Script" uid="uid://dj5ol5tmg6ke" path="res://Menu Set/button_4.gd" id="3_fu7sn"]
+[ext_resource type="FontFile" uid="uid://b5vmrcig58ce6" path="res://assets/Fonts/Leander.ttf" id="3_ximdu"]
 [ext_resource type="Script" uid="uid://b8b6nh1n8xjqb" path="res://Menu Set/button_3.gd" id="4_bplwn"]
 [ext_resource type="AudioStream" uid="uid://bmpjnnab7t7nr" path="res://Audio/The Story Continues.wav" id="6_x2gn0"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bplwn"]
 texture = ExtResource("2_mfqc8")
+
+[sub_resource type="FontVariation" id="FontVariation_cglvy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u4l67"]
+font = ExtResource("3_ximdu")
+font_size = 150
 
 [sub_resource type="Theme" id="Theme_rhts7"]
 
@@ -34,18 +41,33 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_bplwn")
 
-[node name="MainButtons" type="BoxContainer" parent="." unique_id=1767567944]
-visible = false
+[node name="Label" type="Label" parent="Panel" unique_id=1769047759]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -71.0
-offset_top = -160.5
-offset_right = 71.0
-offset_bottom = 160.5
+offset_left = -350.0
+offset_top = 100.0
+offset_right = 350.0
+offset_bottom = 305.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontVariation_cglvy")
+theme_override_font_sizes/font_size = 150
+text = "Pixel Nior"
+label_settings = SubResource("LabelSettings_u4l67")
+horizontal_alignment = 1
+
+[node name="MainButtons" type="BoxContainer" parent="." unique_id=1767567944]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.448
+anchor_top = 0.31500003
+anchor_right = 0.55200005
+anchor_bottom = 0.68500006
+offset_left = -0.16003418
+offset_top = -0.20004272
+offset_right = 0.15991211
+offset_bottom = 0.19995117
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_rhts7")
@@ -55,12 +77,14 @@ vertical = true
 
 [node name="BeginB" type="Button" parent="MainButtons" unique_id=930599342]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ximdu")
 theme_override_font_sizes/font_size = 35
 text = "Begin"
 script = ExtResource("2_fu7sn")
 
 [node name="OptionsB" type="Button" parent="MainButtons" unique_id=459924167]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ximdu")
 theme_override_font_sizes/font_size = 35
 text = "Options
 "
@@ -68,11 +92,13 @@ script = ExtResource("4_bplwn")
 
 [node name="ExitB" type="Button" parent="MainButtons" unique_id=464215962]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ximdu")
 theme_override_font_sizes/font_size = 35
 text = "Exit"
 script = ExtResource("3_fu7sn")
 
 [node name="OptionPanel" type="Panel" parent="." unique_id=316277572]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.312
