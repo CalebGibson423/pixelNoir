@@ -20,3 +20,8 @@ func _on_options_b_pressed() -> void:
 
 func _on_exit_b_pressed():
 	get_tree().quit()
+
+
+func _on_option_exit_pressed():
+	main_buttons.visible = true
+	options.visible = false

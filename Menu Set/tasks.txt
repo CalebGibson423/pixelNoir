@@ -1,10 +1,11 @@
 
 March 9
-- basic movement 
-- basic camera controls
-- main menu
+- basic movement -CG
+- basic camera controls -CG
+- main menu -AX
+- added Menu Music -AX
+- Started Options menu -AX
 
 Current todo
 - create/find better character model
 - create/find better enviornment assets
-- audio
