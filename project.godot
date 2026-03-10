@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="PixelNoir"
-run/main_scene="uid://cv37b5o0xgect"
+run/main_scene="uid://bvuetvoo44oit"
 config/features=PackedStringArray("4.6", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[dotnet]
+
+project/assembly_name="PixelNoir"
 
 [input]
 
