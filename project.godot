@@ -20,7 +20,7 @@ buses/default_bus_layout="uid://cl71gktoffyb3"
 
 [autoload]
 
-AudioManager="*uid://6mmubv0r8q0m"
+AudioManager="*uid://c30jnnjd1ahr2"
 
 [display]
 
