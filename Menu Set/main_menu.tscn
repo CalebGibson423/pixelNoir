@@ -7,6 +7,8 @@
 [ext_resource type="FontFile" uid="uid://b5vmrcig58ce6" path="res://assets/Fonts/Leander.ttf" id="3_ximdu"]
 [ext_resource type="Script" uid="uid://b8b6nh1n8xjqb" path="res://Menu Set/button_3.gd" id="4_bplwn"]
 [ext_resource type="AudioStream" uid="uid://bmpjnnab7t7nr" path="res://Audio/The Story Continues.wav" id="6_x2gn0"]
+[ext_resource type="Script" uid="uid://bsdcsduac0jyp" path="res://Menu Set/music_control.gd" id="7_cglvy"]
+[ext_resource type="Script" uid="uid://e5uewduj48we" path="res://Menu Set/fullscreen_control.gd" id="8_u4l67"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bplwn"]
 texture = ExtResource("2_mfqc8")
@@ -18,6 +20,16 @@ font = ExtResource("3_ximdu")
 font_size = 150
 
 [sub_resource type="Theme" id="Theme_rhts7"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ximdu"]
+color = Color(1, 1, 1, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_cglvy"]
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_u4l67"]
+thickness = 5
 
 [node name="Main_Menu" type="Control" unique_id=282190272]
 layout_mode = 3
@@ -58,6 +70,7 @@ label_settings = SubResource("LabelSettings_u4l67")
 horizontal_alignment = 1
 
 [node name="MainButtons" type="BoxContainer" parent="." unique_id=1767567944]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.448
@@ -98,7 +111,6 @@ text = "Exit"
 script = ExtResource("3_fu7sn")
 
 [node name="OptionPanel" type="Panel" parent="." unique_id=316277572]
-visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.312
@@ -141,12 +153,54 @@ theme_override_font_sizes/font_size = 35
 text = "Exit"
 script = ExtResource("3_fu7sn")
 
+[node name="MusicControl" type="HSlider" parent="OptionPanel" unique_id=1052466946]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -175.0
+offset_top = 150.0
+offset_right = 175.0
+offset_bottom = 250.0
+grow_horizontal = 2
+theme_override_constants/center_grabber = 0
+theme_override_constants/grabber_offset = 0
+theme_override_styles/slider = SubResource("StyleBoxLine_ximdu")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_cglvy")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_u4l67")
+max_value = 1.0
+step = 0.05
+value = 0.5
+script = ExtResource("7_cglvy")
+audio_bus_name = "Music"
+
+[node name="FullscreenControl" type="CheckButton" parent="OptionPanel" unique_id=547310262]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.347
+anchor_top = 0.5
+anchor_right = 0.65300006
+anchor_bottom = 0.64000005
+offset_left = -70.84
+offset_top = 10.0
+offset_right = 66.839966
+offset_bottom = -0.2000122
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Fullscreen
+"
+script = ExtResource("8_u4l67")
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=175644051]
 stream = ExtResource("6_x2gn0")
-volume_db = -32.0
+volume_db = -10.0
 autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="MainButtons/BeginB" to="MainButtons/BeginB" method="_on_pressed"]
 [connection signal="pressed" from="MainButtons/OptionsB" to="." method="_on_options_b_pressed"]
 [connection signal="pressed" from="MainButtons/ExitB" to="." method="_on_exit_b_pressed"]
 [connection signal="pressed" from="OptionPanel/OptionExit" to="." method="_on_option_exit_pressed"]
+[connection signal="value_changed" from="OptionPanel/MusicControl" to="OptionPanel/MusicControl" method="_on_value_changed"]
+[connection signal="toggled" from="OptionPanel/FullscreenControl" to="OptionPanel/FullscreenControl" method="_on_toggled"]
