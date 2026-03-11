@@ -265,4 +265,5 @@ position = Vector2(0, -12.5)
 shape = SubResource("RectangleShape2D_pfmca")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1741465686]
+zoom = Vector2(3, 3)
 position_smoothing_enabled = true

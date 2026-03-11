@@ -4,13 +4,13 @@ const SPEED = 150.0;
 var last_direction := "down"
 
 var zoom_speed := 0.2
-var min_zoom := 0.5
-var max_zoom := 3.0
+var min_zoom := 2.0
+var max_zoom := 5.0
 
 @onready var sprite = $AnimatedSprite2D
 @onready var camera = $Camera2D
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 
 	# converts inputs into vector for consistent speed
 	var direction := Input.get_vector("move_left","move_right","move_up","move_down")
