@@ -1,0 +1,231 @@
+[gd_scene format=3 uid="uid://bvuetvoo44oit"]
+
+[ext_resource type="Script" uid="uid://c4w323pd6q6qx" path="res://menu_set/main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://badakjqb2pbjr" path="res://menu_set/button_2.gd" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://by3ccvhsjcuf5" path="res://assets/tilesets/other/grass.png" id="2_mfqc8"]
+[ext_resource type="Script" uid="uid://dj5ol5tmg6ke" path="res://menu_set/button_4.gd" id="3_fu7sn"]
+[ext_resource type="FontFile" uid="uid://b5vmrcig58ce6" path="res://assets/Fonts/Leander.ttf" id="3_ximdu"]
+[ext_resource type="Script" uid="uid://b8b6nh1n8xjqb" path="res://menu_set/button_3.gd" id="4_bplwn"]
+[ext_resource type="AudioStream" uid="uid://bmpjnnab7t7nr" path="res://audio/music/The Story Continues.wav" id="6_x2gn0"]
+[ext_resource type="Script" uid="uid://e5uewduj48we" path="res://menu_set/fullscreen_control.gd" id="8_u4l67"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bplwn"]
+texture = ExtResource("2_mfqc8")
+
+[sub_resource type="FontVariation" id="FontVariation_cglvy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u4l67"]
+font = ExtResource("3_ximdu")
+font_size = 150
+
+[sub_resource type="Theme" id="Theme_rhts7"]
+
+[node name="Main_Menu" type="Control" unique_id=282190272]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_7vrkn")
+
+[node name="Background" type="Panel" parent="." unique_id=1465283010]
+custom_minimum_size = Vector2(1920, 1080)
+layout_direction = 1
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_bplwn")
+
+[node name="Title" type="Label" parent="Background" unique_id=1769047759]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 100.0
+offset_right = 350.0
+offset_bottom = 305.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontVariation_cglvy")
+theme_override_font_sizes/font_size = 150
+text = "Pixel Nior"
+label_settings = SubResource("LabelSettings_u4l67")
+horizontal_alignment = 1
+
+[node name="MainButtons" type="BoxContainer" parent="." unique_id=1767567944]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.448
+anchor_top = 0.31500003
+anchor_right = 0.55200005
+anchor_bottom = 0.68500006
+offset_left = -0.16003418
+offset_top = -0.20004272
+offset_right = 0.15991211
+offset_bottom = 0.19995117
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_rhts7")
+theme_override_constants/separation = 75
+alignment = 1
+vertical = true
+
+[node name="BeginB" type="Button" parent="MainButtons" unique_id=930599342]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ximdu")
+theme_override_font_sizes/font_size = 35
+text = "Begin"
+script = ExtResource("2_fu7sn")
+
+[node name="OptionsB" type="Button" parent="MainButtons" unique_id=459924167]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ximdu")
+theme_override_font_sizes/font_size = 35
+text = "Options
+"
+script = ExtResource("4_bplwn")
+
+[node name="ExitB" type="Button" parent="MainButtons" unique_id=464215962]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ximdu")
+theme_override_font_sizes/font_size = 35
+text = "Exit"
+script = ExtResource("3_fu7sn")
+
+[node name="OptionPanel" type="Panel" parent="." unique_id=316277572]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.312
+anchor_top = 0.27800003
+anchor_right = 0.68700004
+anchor_bottom = 0.72200006
+offset_left = 0.95996094
+offset_top = -0.24002075
+offset_right = 0.95996094
+offset_bottom = 0.2399292
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9651252, 1.0053946)
+
+[node name="Options text" type="Label" parent="OptionPanel" unique_id=2126743163]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_right = 240.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 80
+text = "Options"
+horizontal_alignment = 1
+
+[node name="OptionExit" type="Button" parent="OptionPanel" unique_id=524921969]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36100003
+anchor_top = 0.87500006
+anchor_right = 0.63900006
+anchor_bottom = 1.0
+offset_left = 0.07998657
+offset_top = -3.0517578e-05
+offset_right = -0.08004761
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 35
+text = "Exit"
+script = ExtResource("3_fu7sn")
+
+[node name="Options" type="VBoxContainer" parent="OptionPanel" unique_id=422768400]
+layout_mode = 0
+offset_left = 153.34798
+offset_top = 136.26492
+offset_right = 575.348
+offset_bottom = 274.2649
+
+[node name="FullscreenControl" type="CheckButton" parent="OptionPanel/Options" unique_id=547310262]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 35
+text = "Fullscreen
+"
+script = ExtResource("8_u4l67")
+
+[node name="AudioOptions" type="Control" parent="OptionPanel/Options" unique_id=989634560]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionPanel/Options/AudioOptions" unique_id=1353662968]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.28908
+offset_top = -3.311203
+offset_right = 8.289093
+offset_bottom = 133.6888
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MasterLabel" type="Label" parent="OptionPanel/Options/AudioOptions/VBoxContainer" unique_id=1198901909]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Master Volume"
+vertical_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="OptionPanel/Options/AudioOptions/VBoxContainer" unique_id=1643904174]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+
+[node name="SFXLabel" type="Label" parent="OptionPanel/Options/AudioOptions/VBoxContainer" unique_id=1518217220]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 1
+text = "SFX Volume"
+
+[node name="SFXSlider" type="HSlider" parent="OptionPanel/Options/AudioOptions/VBoxContainer" unique_id=379817369]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+
+[node name="MusicLabel" type="Label" parent="OptionPanel/Options/AudioOptions/VBoxContainer" unique_id=490651498]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 1
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="OptionPanel/Options/AudioOptions/VBoxContainer" unique_id=374018325]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=175644051]
+visible = false
+stream = ExtResource("6_x2gn0")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="MainButtons/BeginB" to="MainButtons/BeginB" method="_on_pressed"]
+[connection signal="pressed" from="MainButtons/OptionsB" to="." method="_on_options_b_pressed"]
+[connection signal="pressed" from="MainButtons/ExitB" to="." method="_on_exit_b_pressed"]
+[connection signal="pressed" from="OptionPanel/OptionExit" to="." method="_on_option_exit_pressed"]
+[connection signal="toggled" from="OptionPanel/Options/FullscreenControl" to="OptionPanel/Options/FullscreenControl" method="_on_toggled"]
+[connection signal="value_changed" from="OptionPanel/Options/AudioOptions/VBoxContainer/MasterSlider" to="." method="_on_master_slider_value_changed"]
+[connection signal="value_changed" from="OptionPanel/Options/AudioOptions/VBoxContainer/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="OptionPanel/Options/AudioOptions/VBoxContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
