@@ -33,6 +33,10 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="PixelNoir"
 
+[global_group]
+
+Player=""
+
 [input]
 
 move_up={
