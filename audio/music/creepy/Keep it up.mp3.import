@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfpf0q6if6uof"
+path="res://.godot/imported/Keep it up.mp3-babbbb6b20e2c2605f9ff8cb3868206b.mp3str"
+
+[deps]
+
+source_file="res://audio/music/creepy/Keep it up.mp3"
+dest_files=["res://.godot/imported/Keep it up.mp3-babbbb6b20e2c2605f9ff8cb3868206b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

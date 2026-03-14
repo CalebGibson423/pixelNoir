@@ -257,8 +257,7 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=471207523]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_5ef02")
-animation = &"IdleUp"
-frame_progress = 0.85412055
+animation = &"RunUp"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=478958501]
 position = Vector2(0, -12.5)

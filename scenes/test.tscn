@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://b5lkwlwrql0px"]
 
 [ext_resource type="PackedScene" uid="uid://bal8wcetfbaqx" path="res://scenes/player.tscn" id="1_lc1oi"]
-[ext_resource type="AudioStream" uid="uid://wvki66ehhmon" path="res://audio/music/Empty Streets.wav" id="3_iyx0m"]
+[ext_resource type="AudioStream" uid="uid://wvki66ehhmon" path="res://audio/music/vibe/Empty Streets.wav" id="3_iyx0m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qc4db"]
 0:0/0 = 0

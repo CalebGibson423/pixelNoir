@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dxn3nhr66yhll"]
+
+[ext_resource type="Script" uid="uid://cltei0mbw54uu" path="res://scripts/sfx_player.gd" id="1_wd8mt"]
+
+[node name="SfxManager" type="Node" unique_id=166906873]
+script = ExtResource("1_wd8mt")
+
+[node name="SFXPlayer1" type="AudioStreamPlayer" parent="." unique_id=2046744280]
+bus = &"SFX"
+
+[node name="SFXPlayer2" type="AudioStreamPlayer" parent="." unique_id=2081196941]
+bus = &"SFX"
+
+[node name="SFXPlayer3" type="AudioStreamPlayer" parent="." unique_id=780547404]
+bus = &"SFX"
+
+[node name="SFXPlayer4" type="AudioStreamPlayer" parent="." unique_id=902378425]
+bus = &"SFX"

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b5vmrcig58ce6"
-path="res://.godot/imported/Leander.ttf-ff534e10d982afb1b9c1d6a5d87bdfb1.fontdata"
+path="res://.godot/imported/Leander.ttf-47538c39650ab816d63c5e3e1f7219a2.fontdata"
 
 [deps]
 
-source_file="res://assets/Fonts/Leander.ttf"
-dest_files=["res://.godot/imported/Leander.ttf-ff534e10d982afb1b9c1d6a5d87bdfb1.fontdata"]
+source_file="res://assets/fonts/Leander.ttf"
+dest_files=["res://.godot/imported/Leander.ttf-47538c39650ab816d63c5e3e1f7219a2.fontdata"]
 
 [params]
 

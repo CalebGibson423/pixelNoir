@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c67i3bwp5mjx2"
+path="res://.godot/imported/Ceiling Stars.mp3-342e62caeb15b6bb113f7a14c8d6adae.mp3str"
+
+[deps]
+
+source_file="res://audio/music/creepy/Ceiling Stars.mp3"
+dest_files=["res://.godot/imported/Ceiling Stars.mp3-342e62caeb15b6bb113f7a14c8d6adae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

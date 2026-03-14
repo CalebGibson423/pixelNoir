@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clfq3pcxeyva3"
+path="res://.godot/imported/Dark Atmosphere to Synth.wav-a4025b3d9aa0e9e5e37b70ac55854798.sample"
+
+[deps]
+
+source_file="res://audio/music/vibe/Dark Atmosphere to Synth.wav"
+dest_files=["res://.godot/imported/Dark Atmosphere to Synth.wav-a4025b3d9aa0e9e5e37b70ac55854798.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

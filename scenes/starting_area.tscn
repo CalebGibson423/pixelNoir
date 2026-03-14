@@ -3,14 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d4fln2mrakjre" path="res://assets/tiles/Background_Dark-Green_TileSet.png" id="1_kod28"]
 [ext_resource type="PackedScene" uid="uid://bal8wcetfbaqx" path="res://scenes/player.tscn" id="1_sgi67"]
 [ext_resource type="Texture2D" uid="uid://43etrqxfu67i" path="res://assets/tiles/Background_Bleak-Yellow_TileSet.png" id="2_0o27c"]
-[ext_resource type="AudioStream" uid="uid://clfq3pcxeyva3" path="res://audio/music/Dark Atmosphere to Synth.wav" id="2_kkvmv"]
 [ext_resource type="Texture2D" uid="uid://daah55y2dab1w" path="res://assets/tiles/Buildings/Buildings_beige_TileSet.png" id="3_32uu3"]
-[ext_resource type="AudioStream" uid="uid://dy7penah1dnyb" path="res://audio/music/Dystopian.wav" id="3_q4by3"]
-[ext_resource type="AudioStream" uid="uid://wvki66ehhmon" path="res://audio/music/Empty Streets.wav" id="4_kod28"]
-[ext_resource type="AudioStream" uid="uid://7fijyxw1mqr7" path="res://audio/music/Mystery Unsolved.wav" id="5_0o27c"]
-[ext_resource type="AudioStream" uid="uid://b7ychjqudc4ve" path="res://audio/music/Surveillance.wav" id="6_32uu3"]
-[ext_resource type="AudioStream" uid="uid://chcrg2c532h06" path="res://audio/music/The Nightclub.wav" id="7_daof7"]
-[ext_resource type="AudioStream" uid="uid://dgf7hmupxcmkk" path="res://audio/music/The Protagonist.wav" id="8_54grb"]
 [ext_resource type="Texture2D" uid="uid://crc4kx4ydr3nx" path="res://assets/objects/Buildings/Door_1_Beige.png" id="12_54grb"]
 [ext_resource type="Script" uid="uid://dxccwn1vug013" path="res://scenes/door.gd" id="13_5t8ej"]
 [ext_resource type="Texture2D" uid="uid://du0mdrlha24rc" path="res://assets/objects/Buildings/Door_2_Ajar_Beige.png" id="14_koqca"]
@@ -967,17 +960,6 @@ sources/1 = SubResource("TileSetAtlasSource_32uu3")
 sources/3 = SubResource("TileSetAtlasSource_daof7")
 sources/4 = SubResource("TileSetAtlasSource_54grb")
 
-[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_5t8ej"]
-shuffle = true
-stream_count = 7
-stream_0 = ExtResource("2_kkvmv")
-stream_1 = ExtResource("3_q4by3")
-stream_2 = ExtResource("4_kod28")
-stream_3 = ExtResource("5_0o27c")
-stream_4 = ExtResource("6_32uu3")
-stream_5 = ExtResource("7_daof7")
-stream_6 = ExtResource("8_54grb")
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_gq32m"]
 atlas = ExtResource("12_54grb")
 region = Rect2(0, 0, 16, 24)
@@ -1026,12 +1008,6 @@ position = Vector2(50, 90)
 [node name="Office" type="TileMapLayer" parent="." unique_id=1502390128]
 tile_map_data = PackedByteArray("AAD+//r/BAAGAAAAAAD///r/BAAGAAAAAAAAAPr/BAAHAAAAAAABAPr/BAAGAAAAAAACAPr/BAAGAAAAAAADAPr/BAAHAAAAAAAEAPr/BAAGAAAAAAAFAPr/BAAHAAAAAAD9//r/BAAFAAAAAAD9//v/BAAFAAEAAAD9//z/BAAFAAEAAAD9//3/BAAFAAEAAAD9//7/BAAFAAIAAAD+//7/BAAHAAIAAAADAP7/BAAHAAIAAAD///7/BAAGAAIAAAAAAP7/BAAGAAIAAAABAP7/BAAGAAIAAAACAP7/BAAGAAIAAAAEAP7/BAAGAAIAAAAFAP7/BAAGAAIAAAAGAP7/BAADAAMAAAAGAPv/BAAIAAEAAAAGAPz/BAAIAAEAAAAGAP3/BAAIAAEAAAAGAPr/BAAIAAAAAAD9////BAAEAAQAAAD9/wAABAABAAEAAAD9/wEABAABAAQAAAAGAP//BAAEAAEAAAAGAAAABAAEAAEAAAAGAAEABAAEAAEAAAADAAAABAAIAAQAAAD+////BAAFAAQAAAAEAP//BAAIAAQAAAAFAAEABAAIAAQAAAABAP//BAAGAAQAAAADAAEABAAGAAQAAAAGAAIABAADAAQAAAAFAAIABAAHAAUAAAAEAAIABAAIAAUAAAADAAIABAAGAAUAAAACAAIABAAGAAUAAAAFAAAABAAAAAIAAAD+//v/BAAGAAEAAAD///v/BAAHAAQAAAAAAPv/BAAHAAQAAAABAPv/BAAHAAQAAAACAPv/BAAHAAQAAAADAPv/BAAHAAQAAAAEAPv/BAAHAAQAAAAFAPv/BAAGAAEAAAAEAPz/BAAHAAQAAAADAPz/BAAHAAQAAAACAPz/BAAHAAQAAAABAPz/BAAHAAQAAAAAAPz/BAAHAAQAAAD///z/BAAGAAEAAAD+//z/BAAHAAQAAAD+//3/BAAIAAQAAAD///3/BAAHAAQAAAAAAP3/BAAHAAQAAAABAP3/BAAHAAQAAAACAP3/BAAHAAQAAAADAP3/BAAIAAQAAAAEAP3/BAAGAAEAAAAFAP3/BAAHAAQAAAAFAPz/BAAHAAQAAAAEAAAABAAHAAQAAAAEAAEABAAHAAQAAAADAP//BAAHAAQAAAAFAP//BAAHAAQAAAACAP//BAAHAAQAAAACAAAABAAHAAQAAAABAAAABAAHAAQAAAAAAAAABAAHAAQAAAAAAP//BAAHAAQAAAD/////BAAHAAQAAAD//wAABAAHAAQAAAD+/wAABAAIAAMAAAD//wEABAAHAAQAAAAAAAEABAAHAAQAAAABAAEABAAHAAQAAAACAAEABAAHAAQAAAABAAIABAAGAAUAAAAAAAIABAAGAAUAAAD//wIABAAIAAUAAAD+/wEABAAEAAQAAAD9/wIABAAEAAUAAAA=")
 tile_set = SubResource("TileSet_54grb")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1439872401]
-stream = SubResource("AudioStreamPlaylist_5t8ej")
-volume_db = 1.0
-autoplay = true
-bus = &"Music"
 
 [node name="Door3BoardedUpBeige" type="Sprite2D" parent="." unique_id=553847524]
 position = Vector2(-24, 24)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c51o8a1ky61fm"
+path="res://.godot/imported/Saved Notes Spoti.mp3-783c6aadb582ed35e3e00a5b3cdbacdb.mp3str"
+
+[deps]
+
+source_file="res://audio/music/creepy/Saved Notes Spoti.mp3"
+dest_files=["res://.godot/imported/Saved Notes Spoti.mp3-783c6aadb582ed35e3e00a5b3cdbacdb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

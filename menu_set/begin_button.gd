@@ -1,4 +1,6 @@
 extends Button
 
 func _on_pressed():
-	get_tree().change_scene_to_file("res://scenes/starting_area.tscn")
+	SfxManager.play("Retro6")
+	get_tree().change_scene_to_file("res://scenes/bar.tscn")
+	MusicManager.play_next()

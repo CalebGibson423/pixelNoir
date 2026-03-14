@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2un4g5rk07ep"
+path="res://.godot/imported/Lying Down.mp3-569f4680fdd6da8fec0bc28c1a4906ab.mp3str"
+
+[deps]
+
+source_file="res://audio/music/creepy/Lying Down.mp3"
+dest_files=["res://.godot/imported/Lying Down.mp3-569f4680fdd6da8fec0bc28c1a4906ab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

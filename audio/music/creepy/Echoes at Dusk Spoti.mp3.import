@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ce4ox1v2is67e"
+path="res://.godot/imported/Echoes at Dusk Spoti.mp3-621820815ab5f3476de15fa260687fc6.mp3str"
+
+[deps]
+
+source_file="res://audio/music/creepy/Echoes at Dusk Spoti.mp3"
+dest_files=["res://.godot/imported/Echoes at Dusk Spoti.mp3-621820815ab5f3476de15fa260687fc6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

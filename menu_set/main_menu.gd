@@ -16,10 +16,13 @@ func _ready():
 	music_slider.value = AudioManager.buses["Music"]
 	sfx_slider.value = AudioManager.buses["SFX"]
 	
+	MusicManager.play_song("The Story Continues")
+	
 func _on_button_3_pressed() -> void:
 	pass # Replace with function body.
 
 func _on_options_b_pressed() -> void:
+	SfxManager.play("Retro5")
 	main_buttons.visible = false
 	options.visible = true
 
@@ -27,6 +30,7 @@ func _on_exit_b_pressed():
 	get_tree().quit()
 
 func _on_option_exit_pressed():
+	SfxManager.play("Retro5")
 	main_buttons.visible = true
 	options.visible = false
 	
