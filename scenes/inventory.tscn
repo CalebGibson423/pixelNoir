@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://c25qwxi3si1qs"]
+
+[ext_resource type="Texture2D" uid="uid://bixn74y61e6h" path="res://assets/InventoryAssets/Humble Gift - Paper UI System v1.1/Sprites/Paper UI Pack/Plain/10 Calander/1.png" id="1_qw0r6"]
+[ext_resource type="Texture2D" uid="uid://c0arjl1kts5y5" path="res://assets/InventoryAssets/Humble Gift - Paper UI System v1.1/Sprites/Paper UI Pack/Plain/5 Mini Map/1.png" id="2_hj2ta"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ty45s"]
+texture = ExtResource("2_hj2ta")
+
+[sub_resource type="GDScript" id="GDScript_53g1v"]
+script/source = "extends Panel
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Inventory" type="CanvasLayer" unique_id=306571566]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=49634376]
+anchors_preset = -1
+offset_left = 710.0
+offset_top = 247.0
+offset_right = 1366.0
+offset_bottom = 791.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+texture = ExtResource("1_qw0r6")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1977138158]
+offset_left = 757.0
+offset_top = 311.0
+offset_right = 1318.0
+offset_bottom = 743.0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 3
+
+[node name="Slot 1" type="Panel" parent="GridContainer" unique_id=887147791]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ty45s")
+script = SubResource("GDScript_53g1v")
+
+[node name="Slot 5" type="Panel" parent="GridContainer" unique_id=607082720]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ty45s")
+script = SubResource("GDScript_53g1v")
+
+[node name="Slot 6" type="Panel" parent="GridContainer" unique_id=301765259]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ty45s")
+script = SubResource("GDScript_53g1v")
+
+[node name="Slot 3" type="Panel" parent="GridContainer" unique_id=1143671042]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ty45s")
+script = SubResource("GDScript_53g1v")
+
+[node name="Slot 4" type="Panel" parent="GridContainer" unique_id=2110449766]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ty45s")
+script = SubResource("GDScript_53g1v")
+
+[node name="Slot 2" type="Panel" parent="GridContainer" unique_id=1168061625]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ty45s")
+script = SubResource("GDScript_53g1v")

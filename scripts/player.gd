@@ -100,3 +100,20 @@ func footstep_sounds():
 			last_frame = current_frame
 	else:
 		last_frame = -1
+
+const INVENTORY_SCENE = preload("res://scenes/inventory.tscn")
+var inventory_instance = null
+var inventory_open := false
+
+func _input(event: InputEvent):
+	if Input.is_action_just_pressed("OpenInv"):
+		if inventory_open:
+			inventory_instance.hide()
+			inventory_open = false
+		else:
+			if inventory_instance == null:
+				inventory_instance = INVENTORY_SCENE.instantiate()
+				get_tree().root.add_child(inventory_instance)
+			else:
+				inventory_instance.show()
+			inventory_open = true

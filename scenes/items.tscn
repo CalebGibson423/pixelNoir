@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://jnc2vxacp2t7"]
+
+[ext_resource type="Script" uid="uid://e10e6i0xxlc0" path="res://scripts/items.gd" id="1_sj0ge"]
+[ext_resource type="Texture2D" uid="uid://csaixq0tfw2fi" path="res://assets/objects/Bottles/Bottles_32x32_02.png" id="2_trfxy"]
+
+[node name="Items" type="Node2D" unique_id=885251512]
+script = ExtResource("1_sj0ge")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=357289202]
+offset_left = 496.0
+offset_top = 169.0
+offset_right = 536.0
+offset_bottom = 209.0
+texture = ExtResource("2_trfxy")
