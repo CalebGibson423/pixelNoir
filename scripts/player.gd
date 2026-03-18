@@ -107,7 +107,7 @@ var inventory_open := false
 
 var inventory := []
 
-func _input(event: InputEvent):
+func _input(_event: InputEvent):
 	if Input.is_action_just_pressed("OpenInv"):
 		if inventory_open:
 			inventory_instance.hide()

@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://dtx8ghwju31yn" path="res://assets/objects/Bottles/Bottles_32x32_13.png" id="18_53o4m"]
 [ext_resource type="Texture2D" uid="uid://c42la736882hd" path="res://assets/objects/Bottles/Bottles_32x32_15.png" id="19_sgjit"]
 [ext_resource type="Texture2D" uid="uid://btaltggd0hyak" path="res://assets/objects/Bottles/Bottles_32x32_19.png" id="20_iw8av"]
-[ext_resource type="PackedScene" uid="uid://pkp4n8xfmtt3" path="res://scripts/item.tscn" id="23_taqye"]
+[ext_resource type="PackedScene" uid="uid://pkp4n8xfmtt3" path="res://scenes/item.tscn" id="23_taqye"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2j1ym"]
 texture = ExtResource("1_x848m")
