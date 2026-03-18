@@ -250,7 +250,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pfmca"]
 size = Vector2(16, 25)
 
-[node name="Player" type="CharacterBody2D" unique_id=1905551407]
+[node name="Player" type="CharacterBody2D" unique_id=1905551407 groups=["Player"]]
 script = ExtResource("1_cvnsp")
 metadata/_edit_group_ = true
 

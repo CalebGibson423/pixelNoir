@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://pkp4n8xfmtt3"]
+
+[ext_resource type="Script" uid="uid://b6km5mjqs5oag" path="res://item.gd" id="1_x0jxx"]
+[ext_resource type="Texture2D" uid="uid://csaixq0tfw2fi" path="res://assets/objects/Bottles/Bottles_32x32_02.png" id="2_a05gk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0jxx"]
+size = Vector2(47, 52)
+
+[node name="Item" type="Area2D" unique_id=1577622814]
+position = Vector2(309, 156)
+script = ExtResource("1_x0jxx")
+item_icon = ExtResource("2_a05gk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1158636744]
+texture = ExtResource("2_a05gk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1015394253]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_x0jxx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

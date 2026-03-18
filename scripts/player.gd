@@ -105,6 +105,8 @@ const INVENTORY_SCENE = preload("res://scenes/inventory.tscn")
 var inventory_instance = null
 var inventory_open := false
 
+var inventory := []
+
 func _input(event: InputEvent):
 	if Input.is_action_just_pressed("OpenInv"):
 		if inventory_open:
@@ -117,3 +119,10 @@ func _input(event: InputEvent):
 			else:
 				inventory_instance.show()
 			inventory_open = true
+
+func add_item(item_data):
+	inventory.append(item_data)
+	print("Inventory now:", inventory) # debug
+	
+	if inventory_instance != null:
+		inventory_instance.update_inventory(inventory)

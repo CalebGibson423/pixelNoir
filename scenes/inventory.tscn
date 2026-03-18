@@ -23,7 +23,6 @@ func _process(delta: float) -> void:
 [node name="Inventory" type="CanvasLayer" unique_id=306571566]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=49634376]
-anchors_preset = -1
 offset_left = 710.0
 offset_top = 247.0
 offset_right = 1366.0
